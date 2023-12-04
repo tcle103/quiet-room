@@ -27,3 +27,14 @@ window.addEventListener('mousemove', function (e) {
     update(getCursorPoint(e, svgElement));
     console.log("im moving!")
 }, false);
+
+$(".special-button").click(function(){
+    console.log("clicked");
+    $(".under").toggleClass("clipped");
+    if ($(".under").hasClass("clipped")) {
+        $(".special-button").html("turn on");
+    }
+    else {
+        $(".special-button").html("turn off");
+    }
+})
