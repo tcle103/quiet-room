@@ -27,19 +27,3 @@ window.addEventListener('mousemove', function (e) {
     update(getCursorPoint(e, svgElement));
     console.log("im moving!")
 }, false);
-
-$(".under").append("<br><button class='special-button'>oh no!! im clickable :(( you can turn on the lights now...</button>");
-$(".special-button").click(function(){
-    console.log("clicked");
-    $(".under").toggleClass("clipped");
-    if ($(".under").hasClass("clipped")) {
-        $(".special-button").html("oh no!! im clickable :(( you can turn on the lights now...");
-    }
-    else {
-        $(".special-button").html("oh no!! im clickable :(( you can turn off the lights now...");
-    }
-})
-
-setTimeout(function(){
-    $(".under").append("<div id='surprise'>boo!</div>");
-}, 5000);
