@@ -24,16 +24,22 @@ svg {
 }
 
 .under *{
-    background-color: white;
+    height: auto;
     position: absolute;
     top: 0;
     left:0%;
 }
 
 #switch {
-    width: 50px;
+    width: 3%;
     top: 300px;
     left: 92%;
+}
+
+#clock {
+    width: 7%;
+    top: 395px;
+    left: 50%;
 }
 
 #background {
