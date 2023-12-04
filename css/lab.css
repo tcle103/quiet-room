@@ -1,0 +1,24 @@
+main {
+    position: relative;
+}
+
+.clipped {
+    clip-path: url(#flashlight);
+    -webkit-clip-path: url(#flashlight);
+}
+
+.under {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left:0%;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
