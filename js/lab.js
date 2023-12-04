@@ -28,13 +28,13 @@ window.addEventListener('mousemove', function (e) {
     console.log("im moving!")
 }, false);
 
-$(".special-button").click(function(){
+$("#switch").click(function(){
     console.log("clicked");
     $(".under").toggleClass("clipped");
     if ($(".under").hasClass("clipped")) {
-        $(".special-button").html("turn on");
+        $("#switch").attr("src", "img/LightSwitchOff.png");
     }
     else {
-        $(".special-button").html("turn off");
+        $("#switch").attr("src", "img/LightSwitchOn.png");
     }
 })
