@@ -1,10 +1,18 @@
 main {
     position: relative;
+    
 }
 
 .clipped {
     clip-path: url(#flashlight);
     -webkit-clip-path: url(#flashlight);
+}
+
+svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .under {
@@ -15,10 +23,3 @@ main {
     left:0%;
 }
 
-svg {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
