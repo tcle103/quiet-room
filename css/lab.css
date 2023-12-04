@@ -36,10 +36,16 @@ svg {
     left: 92%;
 }
 
+#bed {
+    width: 39%;
+    top: 380px;
+    left: 5%;
+}
+
 #clock {
     width: 7%;
-    top: 395px;
-    left: 50%;
+    top: 400px;
+    left: 66%;
 }
 
 #background {
