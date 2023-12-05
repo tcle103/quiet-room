@@ -40,6 +40,10 @@ svg {
     width: 39%;
     top: 380px;
     left: 5%;
+    content:url(../img/bed1.png);
+    animation-name: sleep;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 #clock {
@@ -70,3 +74,10 @@ svg {
     display:none;
 }
 
+@keyframes sleep {
+    0% {content:url(../img/bed1.png)};
+    25% {content:url(../img/bed2.png)};
+    50% {content:url(../img/bed3.png)};
+    75% {content:url(../img/bed2.png)};
+    100% {content:url(../img/bed1.png)};
+}
