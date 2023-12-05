@@ -38,3 +38,5 @@ $("#switch").click(function(){
         $("#switch").attr("src", "img/LightSwitchOn.png");
     }
 })
+
+// draggable here https://stackabuse.com/how-to-create-a-draggable-carousel-using-vanilla-javascript/
