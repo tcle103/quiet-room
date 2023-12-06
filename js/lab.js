@@ -111,8 +111,8 @@ $("#diary-spine").click(function() {
 
 $("#diary-button").click(function() {
     console.log("diary reset");
-    $("#right-button").removeClass("hidden");
-    $("#left-button").addClass("hidden");
+    $("#right-arrow").removeClass("hidden");
+    $("#left-arrow").addClass("hidden");
     $("#diary-open").addClass("hidden");
     $("#diary-cover").removeClass('hidden');
     $("#diary-button").css("top", "50px");
