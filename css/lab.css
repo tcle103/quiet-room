@@ -37,9 +37,53 @@ svg {
     width: 65px;
 }
 
+.next_button {
+    width: 125px;
+    
+}
+
+#right-arrow {
+    top: 610px;
+    left: 58%;
+}
+
+#left-arrow {
+    top: 670px;
+    left: 8%;
+}
+
+#diary-button {
+    left: 63%;
+    top: 50px;
+}
+
 #shade {
     width: 1920px;
     height: 1080px;
+}
+
+#diary-popup {
+    width: 70%;
+    top: 60px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+#diary-cover {
+    width: 50%;
+    transform: translate(50%);
+}
+
+#card-open-button {
+    top: 10px;
+    left: 93%;
+}
+
+#card-popup {
+    width: 70%;
+    top: 50px;
+    left:50%;
+    transform: translate(-50%);
 }
 
 #phone-text-button {

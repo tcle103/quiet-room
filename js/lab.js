@@ -95,4 +95,46 @@ $("#phone-bottom").click(function() {
     $("#phone-text-popup").removeClass("hidden");
 })
 
+// card popup
+$("#card-closed").click(function() {
+    console.log("card clicked");
+    $("#dark").removeClass("hidden");
+    $("#card-popup").removeClass("hidden");
+})
 
+// diary popup
+$("#diary-spine").click(function() {
+    console.log("diary clicked");
+    $("#dark").removeClass("hidden");
+    $("#diary-popup").removeClass("hidden");
+})
+
+$("#diary-button").click(function() {
+    console.log("diary reset");
+    $("#right-button").removeClass("hidden");
+    $("#left-button").addClass("hidden");
+    $("#diary-open").addClass("hidden");
+    $("#diary-cover").removeClass('hidden');
+    $("#diary-button").css("top", "50px");
+    $("#diary-button").css("left", "63%");
+})
+
+$("#left-arrow").click(function() {
+    console.log("diary close");
+    $("#right-arrow").removeClass("hidden");
+    $("#left-arrow").addClass("hidden");
+    $("#diary-open").addClass("hidden");
+    $("#diary-cover").removeClass('hidden');
+    $("#diary-button").css("top", "50px");
+    $("#diary-button").css("left", "63%");
+})
+
+$("#right-arrow").click(function() {
+    console.log("diary open");
+    $("#left-arrow").removeClass("hidden");
+    $("#right-arrow").addClass("hidden");
+    $("#diary-open").removeClass("hidden");
+    $("#diary-cover").addClass("hidden");
+    $("#diary-button").css("top", "50px");
+    $("#diary-button").css("left", "85%");
+})
