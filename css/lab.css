@@ -64,6 +64,19 @@ svg {
     left:0%;
 }
 
+#diary-spine {
+    width: 6%;
+    top: 400px;
+    left: 82.1%;
+    rotate: 112deg;
+}
+
+#card-closed {
+    width: 9%;
+    top: 720px;
+    left: 32%;
+}
+
 #phone-bottom {
     width: 4%;
     top: 430px;
