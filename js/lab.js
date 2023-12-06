@@ -39,4 +39,14 @@ $("#switch").click(function(){
     }
 })
 
-// draggable here https://stackabuse.com/how-to-create-a-draggable-carousel-using-vanilla-javascript/
+$("#phone-bottom").click(function() {
+    console.log("phone bottom clicked");
+    $("#dark").removeClass("hidden");
+    $("#phone-text-popup").removeClass("hidden");
+})
+
+$(".exit_button").click(function() {
+    console.log("popup closed");
+    $("#dark").addClass("hidden");
+    $(this).parent().addClass("hidden");
+})
