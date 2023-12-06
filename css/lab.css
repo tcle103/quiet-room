@@ -48,8 +48,8 @@ svg {
 }
 
 #left-arrow {
-    top: 670px;
-    left: 8%;
+    top: 630px;
+    left: 13%;
 }
 
 #diary-button {
@@ -67,6 +67,11 @@ svg {
     top: 60px;
     left:50%;
     transform: translate(-50%);
+}
+
+#diary-open{
+    width: 94%;
+    transform: translate(6%);
 }
 
 #diary-cover {

@@ -136,5 +136,5 @@ $("#right-arrow").click(function() {
     $("#diary-open").removeClass("hidden");
     $("#diary-cover").addClass("hidden");
     $("#diary-button").css("top", "50px");
-    $("#diary-button").css("left", "85%");
+    $("#diary-button").css("left", "86%");
 })
