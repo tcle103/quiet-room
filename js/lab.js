@@ -140,9 +140,6 @@ $("#right-arrow").click(function() {
 })
 
 //stickynote popup
-$("#sticky-note-small").click(function() {
-    console.log("stickynote open");
-})
 
 
 //adding an api that randomly generates a compliment every time you load it.
@@ -160,16 +157,24 @@ ENDPOINT = "https://8768zwfurd.execute-api.us-east-1.amazonaws.com/v1/compliment
         success: ajaxSuccess,
         error: ajaxError
     }
-      $.ajax(ajaxParams)
+    $.when($.ajax(ajaxParams)).then(function(){
+        $("#sticky-note-popup").removeClass("hidden");
+        $("#dark").removeClass("hidden");
+      })
   })
+  
   //success function
   function ajaxSuccess(data){
       console.log("Here's what I got:", data)
       //we'll put like an append here to append data to the stickynote.
-
+      $("#compliment").empty();
+      $("#compliment").append(data);
+      
         
   }
   //error function
   function ajaxError(request,error){
       console.log("Oops:", request, error)
   }
+
+  
