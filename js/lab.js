@@ -138,3 +138,33 @@ $("#right-arrow").click(function() {
     $("#diary-button").css("top", "50px");
     $("#diary-button").css("left", "86%");
 })
+
+
+//adding an api that randomly generates a compliment every time you load it.
+ENDPOINT = "https://8768zwfurd.execute-api.us-east-1.amazonaws.com/v1/compliments";
+  
+  // add button event listener
+  $("#get-em").click(function(){
+    
+    // construct ajax object
+    const ajaxParams = {
+      url: ENDPOINT,
+      data: {},
+      type: "GET",
+      dataType: "json",
+        success: ajaxSuccess,
+        error: ajaxError
+    }
+      $.ajax(ajaxParams)
+  })
+  //success function
+  function ajaxSuccess(data){
+      console.log("Here's what I got:", data)
+      //we'll put like an append here to append data to the stickynote.
+
+        
+  }
+  //error function
+  function ajaxError(request,error){
+      console.log("Oops:", request, error)
+  }
