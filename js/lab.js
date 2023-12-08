@@ -139,12 +139,17 @@ $("#right-arrow").click(function() {
     $("#diary-button").css("left", "86%");
 })
 
+//stickynote popup
+$("#sticky-note-small").click(function() {
+    console.log("stickynote open");
+})
+
 
 //adding an api that randomly generates a compliment every time you load it.
 ENDPOINT = "https://8768zwfurd.execute-api.us-east-1.amazonaws.com/v1/compliments";
   
-  // add button event listener
-  $("#get-em").click(function(){
+  // add button event listener, will change the button to the sticky note
+  $("#sticky-note-small").click(function(){
     
     // construct ajax object
     const ajaxParams = {

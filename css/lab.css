@@ -150,6 +150,12 @@ svg {
     left: 25%;
 }
 
+#sticky-note-small {
+    width: 3%;
+    top: 320px;
+    left: 45%
+}
+
 #bed {
     width: 39%;
     top: 380px;
