@@ -53,7 +53,7 @@ setTimeout(function() {
     // play alarm sound here
     alarm.play();
     console.log("ringing");
-}, 5000); // 5000 ms is 5 seconds but we will probably want to make this longer
+}, 300000); 
 
 $("#clock").click(function(){
     // pause alarm sound here
@@ -67,7 +67,7 @@ $("#clock").click(function(){
         // play alarm sound here
         alarm.play();
         console.log("ringing");
-    }, 5000);
+    }, 300000);
 })
 
 // bed 
