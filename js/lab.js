@@ -58,6 +58,7 @@ setTimeout(function() {
 $("#clock").click(function(){
     // pause alarm sound here
     alarm.pause();
+    switchSound.play();
     // reset alarm to start of sound, if this breaks it just remove later
     alarm.currentTime = 0;
     console.log("alarm stopped");

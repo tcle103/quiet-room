@@ -163,12 +163,6 @@ svg {
     left: 55%;
 }
 
-#laptop-screen {
-    width: 8.6%;
-    top: 329px;
-    left: 57%;
-}
-
 #switch {
     width: 3%;
     top: 300px;
@@ -226,9 +220,9 @@ svg {
 }
 
 @keyframes sleep {
-    0% {content:url(../img/bed1.png)};
-    25% {content:url(../img/bed2.png)};
-    50% {content:url(../img/bed3.png)};
-    75% {content:url(../img/bed2.png)};
-    100% {content:url(../img/bed1.png)};
+    0% {content:url(../img/bed1.png);}
+    25% {content:url(../img/bed2.png);}
+    50% {content:url(../img/bed3.png);}
+    75% {content:url(../img/bed2.png);}
+    100% {content:url(../img/bed1.png);}
 }
