@@ -88,6 +88,11 @@ svg {
     height: 1080px;
 }
 
+#dialogue-bubble {
+    top: 200px;
+    left: 78%;
+}
+
 #diary-popup {
     width: 70%;
     top: 60px;
