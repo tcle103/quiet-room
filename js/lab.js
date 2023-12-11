@@ -61,6 +61,8 @@ $("#switch").click(function () {
         // play light switch sound here
         switchSound.play();
         console.log("all done, lights on!");
+        $("#dark").removeClass("hidden");
+        $("#credits").removeClass("hidden");
         $(".under").toggleClass("clipped");
         if ($(".under").hasClass("clipped")) {
             $("#switch").attr("src", "img/LightSwitchOff.png");
@@ -68,9 +70,14 @@ $("#switch").click(function () {
         else {
             $("#switch").attr("src", "img/LightSwitchOn.png");
         }
+
     }
     else {
         noSwitch.play();
+        $("#dialogue-bubble-popup").removeClass("hidden");
+        setTimeout(function() {
+            $("#dialogue-bubble-popup").addClass("hidden");
+        }, 5000);
         console.log("not yet!");
         console.log(clickedObj);
     }
@@ -86,7 +93,7 @@ setTimeout(function () {
     // play alarm sound here
     alarm.play();
     console.log("ringing");
-}, 300000);
+}, 50000);
 
 $("#clock").click(function () {
     if ($("#clock").hasClass("clickable") === true) {

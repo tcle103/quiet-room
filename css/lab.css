@@ -46,6 +46,12 @@ svg {
     
 }
 
+#dialogue-bubble-popup {
+    width: 10%;
+    top: 30px;
+    left: 73.5%;
+}
+
 #compliment {
     max-width: 350px;
     font-size: 30px;
@@ -132,6 +138,42 @@ svg {
     top: 20px;
     left:50%;
     transform: translate(-50%);
+}
+
+#credits {
+    width: 500px;
+    height: 300px;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+    top: 230px;
+}
+
+#credits-button {
+    left: 180%;
+    top: -200px;
+}
+
+#credits * {
+    color: white;
+    font-family: cursive;
+}
+
+#credits h2 {
+    font-size: 50px;
+}
+
+#credits p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#group {
+    top: 180px;
+}
+
+#group1 {
+    top: 210px;
 }
 
 
