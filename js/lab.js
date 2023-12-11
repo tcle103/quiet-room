@@ -86,7 +86,7 @@ setTimeout(function () {
     // play alarm sound here
     alarm.play();
     console.log("ringing");
-}, 500);
+}, 300000);
 
 $("#clock").click(function () {
     if ($("#clock").hasClass("clickable") === true) {
