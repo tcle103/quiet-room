@@ -23,6 +23,9 @@ svg {
     box-shadow: 0 0 9px 5px yellow;
 }
 
+.unclickable:hover {
+    box-shadow: 0 0 0px 0px black;
+}
 /* this is over stuff i.e. pop ups from interactibles */
 
 .top * {
